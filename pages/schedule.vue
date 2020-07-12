@@ -67,7 +67,15 @@ export default {
          this.errored = true
        })
        .finally(() => this.loading = false)
-   }
+   },
+  head () {
+  return {
+    title: this.title,
+    meta: [
+      { hid: 'description', name: 'description', content: 'Car Safe Kids Summer Schedule for 2020. Click here to learn more.' }
+    ]
+  }
+}
  }
  </script>
 

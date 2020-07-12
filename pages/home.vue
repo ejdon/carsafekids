@@ -38,7 +38,7 @@
             </blockquote>
           </div>
       </div>
-      
+
     </div>
   </main>
 
@@ -52,11 +52,21 @@ export default {
   data () {
   return {
   quote: 'Hear from other visitors',
+  title: 'Car Safe Kids Homepage'
   }
 },
+
 filters: {
   upperCase: function(value) {
     return value.toUpperCase();
+    }
+  },
+  head () {
+  return {
+    title: this.title,
+    meta: [
+      { hid: 'description', name: 'description', content: 'Car Safe Kids offers the ability to get one-on-one guidance on using your childs car seat. Click here to learn more.' }
+    ]
   }
 }
 }

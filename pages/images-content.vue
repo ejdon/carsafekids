@@ -7,7 +7,7 @@
     <p>{{image.caption}}</p>
     </div>
   </div>
-  
+
 </template>
 
 <script>
@@ -16,7 +16,8 @@
 export default {
     name: 'photos',
     props: {
-            image: Object,
+            image: [Object, String],
+            required: true,
             default: function () {
                 return {}
             }

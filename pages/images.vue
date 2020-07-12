@@ -22,9 +22,18 @@ return {
     { src: image1, alt: 'a woman installing a car seat into a car', caption: 'CSK will teach you how to install your car seat' },
     { src: image2, alt: 'a baby smiling at the camera while in a car seat', caption: 'CSK can assist families with babies, expectant parents, and others, including grandparents and nannies' },
     { src: image3, alt: 'a man installing a baby into a car seat', caption: 'CSK technicians will ensure your car seat harness is used properly' },
-    ]
+    ],
+    title: 'Images from Car Safe Kids'
   }
- }
+ },
+ head () {
+    return {
+      title: this.title,
+      meta: [
+        { hid: 'description', name: 'description', content: 'Images of Car Safe Kids technicians helping to install car seats' }
+      ]
+    }
+  }
 }
 </script>
 

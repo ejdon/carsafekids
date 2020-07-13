@@ -14,7 +14,7 @@ All of this shows how important understanding SEO is, as it is incredibly import
 Ideal Car Safe Kids SEO Plan
 I would have multiple steps, focused on content and code updates, in my SEO strategy to increase the ranking and visibility of my site.
 
-Content-wise, I would start with consulting various sites to determine what keywords I should be targeting in order in increase our chances of showing up in organic search queries. For example, 'car seat safety' would most likely be a strong non-brand keyword that I would want to target. Therefore, I'd make sure the meta title, meta description and URL are utilizing this language, as well as sprinkling it throughout my content.
+Content-wise, I would start with consulting various sites to determine what keywords I should be targeting in order to increase our chances of showing up in organic search queries. For example, 'car seat safety' would most likely be a strong non-brand keyword that I would want to target. Therefore, I'd make sure the meta title, meta description and URL are utilizing this language, as well as sprinkling it throughout my content.
 
 In addition, I would want to have strategic linking throughout the site. As the site gets bigger, I would want to utilize internal linking between pages to ensure there aren't any orphaned pages and allow for crawlers to find each page. External links would also be beneficial to the site's overall SEO ranking, and I'd want to link out to other relevant content that users find interesting when appropriate. Ideally, I would be linked to by other relevant sources as well. In the future, I'd also want to adjust my API so that it was pulling in more relevant content, potentially after gaining approval to access car seat specific APIs.
 

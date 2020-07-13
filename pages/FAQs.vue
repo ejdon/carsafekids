@@ -72,14 +72,24 @@ export default {
   name: 'FAQs',
   data () {
     return {
+    title: 'Frequently Asked Questions for Car Safe Kids',
     items: [
     { question1: 'Will I be asked to participate?', answer1: ' A car seat clinic is an educational opportunity. We want you to get the most value for your time, so plan to participate in the check-up process.', question2: 'Should I bring anything?', answer2: 'Yes. Bring the owner manuals for the car seat and vehicle. Having diapers, snacks and toys handy may make waiting time more pleasant.', question3: 'Will there be a place for kids to play?', answer3: 'There will be a small play area for kids. However, we recommend bringing personal toys as well.' },
   ],
    show: false,
    show2: false,
    show3: false,
+
     }
+  },
+head () {
+  return {
+    title: this.title,
+    meta: [
+      { hid: 'description', name: 'description', content: 'Click here to view frequently asked questions and their answers!' }
+    ]
   }
+}
 }
 </script>
 

@@ -1,96 +1,60 @@
 <template>
-<div>
+  <div role="tablist">
+  <h2 class="m-3">Frequently asked questions</h2>
+    <b-card no-body class="mb-1">
+      <b-card-header header-tag="header" class="p-1" role="tab">
+        <b-button block v-b-toggle.accordion-1 variant="danger"> Will I be asked to participate? </b-button>
+      </b-card-header>
 
-<div class="container">
-       <h2 class="m-3">Frequently asked questions</h2>
+      <b-collapse id="accordion-1" accordion="my-accordion" role="tabpanel">
+        <b-card-body>
+          <b-card-text> A car seat clinic is an educational opportunity. We want you to get the most value for your time, so plan to participate in the check-up process. </b-card-text>
+        </b-card-body>
+      </b-collapse>
+    </b-card>
 
-       <!-- starting for loop -->
-       <div v-for="item in items" v-bind:key="item" class="accordion m-3">
-           <div class="card">
+    <b-card no-body class="mb-1">
+      <b-card-header header-tag="header" class="p-1" role="tab">
+        <b-button block v-b-toggle.accordion-2 variant="danger">Should I bring anything?</b-button>
+      </b-card-header>
+      <b-collapse id="accordion-2" accordion="my-accordion" role="tabpanel">
+        <b-card-body>
+          <b-card-text>Yes. Bring the owner manuals for the car seat and vehicle. Having diapers, snacks and toys handy may make waiting time more pleasant.</b-card-text>
+        </b-card-body>
+      </b-collapse>
+    </b-card>
 
-           <!--Question-->
-             <div class="card-header">
-               <h2>
-                 <button class="btn btn-link" type="button"  v-on:click="show = !show" data-target="#collapseOne">
-                   {{ item.question1 }}
-                 </button>
-               </h2>
-             </div>
-
-             <!--Answer-->
-             <div id="collapseOne" v-if="show" class="collapse show" data-parent="#accordion">
-               <div class="card-body">
-                   {{ item.answer1 }}
-               </div>
-             </div>
-           </div>
-           <div class="card">
-
-           <!--Question 2-->
-             <div class="card-header">
-               <h2>
-                 <button class="btn btn-link" data-toggle="collapse" type="button" v-on:click="show2 = !show2" data-target="#collapseTwo">
-                   {{ item.question2 }}
-                 </button>
-               </h2>
-             </div>
-
-             <!--Answer 2-->
-             <div id="collapseTwo" v-if="show2" class="collapse show2" data-parent="#accordion">
-               <div class="card-body">
-                   {{ item.answer2 }}
-               </div>
-             </div>
-           </div>
-           <div class="card">
-
-           <!--Question 3-->
-             <div class="card-header">
-               <h2>
-                 <button class="btn btn-link" data-toggle="collapse" type="button" v-on:click="show3 = !show3" data-target="#collapseThree">
-                   {{ item.question3 }}
-                 </button>
-               </h2>
-             </div>
-
-             <!--Answer 3 -->
-             <div id="collapseThree" v-if="show3" class="collapse show3" data-parent="#accordion">
-               <div class="card-body">
-                   {{ item.answer3 }}
-               </div>
-             </div>
-           </div>
-       </div>
-   </div>
-
-</div>
+    <b-card no-body class="mb-1">
+      <b-card-header header-tag="header" class="p-1" role="tab">
+        <b-button block v-b-toggle.accordion-3 variant="danger">Will there be a place for kids to play?</b-button>
+      </b-card-header>
+      <b-collapse id="accordion-3" accordion="my-accordion" role="tabpanel">
+        <b-card-body>
+          <b-card-text>There will be a small play area for kids. However, we recommend bringing personal toys as well.</b-card-text>
+        </b-card-body>
+      </b-collapse>
+    </b-card>
+  </div>
 </template>
-
 
 <script>
 export default {
   name: 'FAQs',
-  data () {
+      data() {
+      return {
+      title: 'Frequently Asked Questions for Car Safe Kids',
+      }
+    },
+    head () {
     return {
-    title: 'Frequently Asked Questions for Car Safe Kids',
-    items: [
-    { question1: 'Will I be asked to participate?', answer1: ' A car seat clinic is an educational opportunity. We want you to get the most value for your time, so plan to participate in the check-up process.', question2: 'Should I bring anything?', answer2: 'Yes. Bring the owner manuals for the car seat and vehicle. Having diapers, snacks and toys handy may make waiting time more pleasant.', question3: 'Will there be a place for kids to play?', answer3: 'There will be a small play area for kids. However, we recommend bringing personal toys as well.' },
-  ],
-   show: false,
-   show2: false,
-   show3: false,
-
+      title: this.title,
+      meta: [
+        { hid: 'description', name: 'description', content: 'Click here to view frequently asked questions and their answers!' }
+      ]
     }
-  },
-head () {
-  return {
-    title: this.title,
-    meta: [
-      { hid: 'description', name: 'description', content: 'Click here to view frequently asked questions and their answers!' }
-    ]
   }
-}
-}
+  }
+  </script>
 </script>
 
 <style scoped>

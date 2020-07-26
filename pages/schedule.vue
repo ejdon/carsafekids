@@ -28,8 +28,8 @@
           <section class="container" v-if="articles">
           <api
             v-for="article of articles"
-            :key="article.id"
             :article="article"
+            :key="article.id"
             />
           </section>
           </div>

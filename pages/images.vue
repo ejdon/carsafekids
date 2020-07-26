@@ -1,6 +1,6 @@
 <script>
 import mixins from './mixins';
-import photos from './images-content.vue';
+import imageContent from './images-content.vue';
 
 //Creating image variables
 var image1 = require('../static/sidebar-1.jpg');
@@ -13,7 +13,7 @@ export default {
 name: 'Images',
 mixins: [mixins],
 components: {
-  photos
+  imageContent
 },
 data () {
 return {
@@ -52,10 +52,10 @@ return {
 
 <!--inserting photo onto page-->
 <div v-if="images" class="container">
-    <photos
-     v-for="images in images"
-     v-bind:image="images"
-     v-bind:key="images.src"
+    <imageContent
+     v-for="image in images"
+     :image="image"
+     :key="image.id"
     />
 </div>
 

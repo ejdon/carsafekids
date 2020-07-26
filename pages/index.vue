@@ -14,14 +14,13 @@
       <p>Bring your car seat, your car, and your child and be prepared to have hands-on training. Expectant parents and other caregivers also welcome.</p>
 
       <!-- v-if and v-else -->
-      <btn v-if="show" v-on:click="show = !show" class="btn btn-info">Check out our schedule to attend an event</btn>
-      <ul v-else class="list-group list-group-flush">
-        <li class="list-group-item"><nuxt-link to="/schedule">July 18th - Evergreen Hospital</nuxt-link></li>
-        <li class="list-group-item"><nuxt-link to="/schedule">August 22nd - Children's Hospital</nuxt-link></li>
-        <li class="list-group-item"><nuxt-link to="/schedule">September 5th - Evergreen Hospital</nuxt-link></li>
-      </ul>
+           <btn v-if="show" v-on:click="show = !show" class="btn btn-info">Check out our schedule to attend an event</btn>
+           <ul v-else class="list-group list-group-flush">
+             <li class="list-group-item"><nuxt-link to="/schedule">July 18th - Evergreen Hospital</nuxt-link></li>
+             <li class="list-group-item"><nuxt-link to="/schedule">August 22nd - Children's Hospital</nuxt-link></li>
+             <li class="list-group-item"><nuxt-link to="/schedule">September 5th - Evergreen Hospital</nuxt-link></li>
+           </ul>
       </div>
-
   <!-- index image section -->
     <img class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5" src="/index-image.jpg" alt="A woman buckling a child into a car seat" style="margin-right: 2%;">
   </div>
@@ -49,6 +48,9 @@
 //filter
 export default {
   name: 'Home',
+  props: {
+    show: ''
+  },
   data () {
   return {
   quote: 'Hear from other visitors',

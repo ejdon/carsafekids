@@ -1,7 +1,8 @@
 <script>
 export default {
+	name: 'api',
 	props: {
-		article: Object
+		article: Object,
 	}
 }
 </script>

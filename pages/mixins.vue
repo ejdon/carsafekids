@@ -1,3 +1,4 @@
+<script>
 export default {
 	created: function () {
 		console.log('border mixin')
@@ -19,3 +20,7 @@ export default {
 		}
 	}
 }
+</script>
+<template>
+
+</template>

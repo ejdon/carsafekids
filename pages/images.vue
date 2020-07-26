@@ -1,5 +1,5 @@
 <script>
-import mixins from './mixins';
+import mixins from './mixins.vue';
 import imageContent from './images-content.vue';
 
 //Creating image variables

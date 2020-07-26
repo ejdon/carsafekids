@@ -3,6 +3,7 @@ export default {
 	name: 'api',
 	props: {
 		article: Object,
+		default: function () { return {} }
 	}
 }
 </script>

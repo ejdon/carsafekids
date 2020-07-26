@@ -16,13 +16,13 @@
 export default {
     name: 'imageContent',
     props: {
-            image: [Object, String],
+            image: Object,
             required: true,
             default: function () {
                 return {}
             }
           }
-        }
+  }
 </script>
 
 <style scoped>

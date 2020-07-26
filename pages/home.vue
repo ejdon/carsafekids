@@ -48,13 +48,11 @@
 //filter
 export default {
   name: 'Home',
-  props: {
-    show: ''
-  },
   data () {
   return {
   quote: 'Hear from other visitors',
-  title: 'Car Safe Kids Homepage'
+  title: 'Car Safe Kids Homepage',
+  show: false,
   }
 },
 

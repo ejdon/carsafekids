@@ -1,5 +1,6 @@
 <script>
 export default {
+name: 'mixin',
 	created: function () {
 		console.log('border mixin')
 	},
